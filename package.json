@@ -30,13 +30,13 @@
     ]
   },
   "lint-staged": {
-    "**/*.{tsx,json}": [
+    "**/*.tsx": [
       "eslint"
     ],
     "**/*.{tsx,json,css}": [
       "prettier --write"
     ],
-    "*.{json}": [
+    "*.json": [
       "prettier --write"
     ]
   },
