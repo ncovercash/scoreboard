@@ -22,10 +22,17 @@ const ScoreboardRow: FunctionComponent<Props> = ({
   maxScore,
   highlight = 0,
 }: Props) => {
+  if (highlight < 0 || highlight >= highlights.length) {
+    throw new RangeError(
+      `A highlight value of ${highlight} is invalid (must be between 0 and ${
+        highlights.length - 1
+      })`,
+    );
+  }
   return (
     <>
       <div
-        className={`flex-1 flex justify-center align-center ${highlights[highlight]}`}
+        className={`flex-1 flex justify-center align-center rounded-xl ${highlights[highlight]}`}
       >
         <div className="w-1/5 flex flex-col justify-center">
           <h1 className="font-heading font-bold text-7xl text-right pb-2">
