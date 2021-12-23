@@ -1,13 +1,9 @@
-import "./App.css";
+import Scoreboard from "./Scoreboard";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-7xl text-blue-500">Test</h1>
-      </header>
+    <div className="App p-6">
+      <Scoreboard />
     </div>
   );
 }
-
-export default App;
