@@ -7,6 +7,7 @@ export default function Scoreboard() {
     <div className="flex flex-col h-full">
       {config.map((player) => (
         <ScoreboardRow
+          key={player.name}
           playerName={player.name}
           score={player.score}
           maxScore={maxScore}

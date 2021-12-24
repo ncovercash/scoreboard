@@ -10,10 +10,11 @@ interface Props {
 
 export const highlights = [
   "bg-transparent",
-  "bg-red-300",
+  "bg-red-400",
   "bg-orange-300",
-  "bg-lime-300",
+  "bg-lime-500",
   "bg-blue-300",
+  "bg-fuchsia-400",
 ];
 
 const ScoreboardRow: FunctionComponent<Props> = ({
@@ -32,7 +33,7 @@ const ScoreboardRow: FunctionComponent<Props> = ({
   return (
     <>
       <div
-        className={`flex-1 flex justify-center align-center rounded-xl ${highlights[highlight]}`}
+        className={`flex-1 flex justify-center align-center rounded-xl transition-bg-color ${highlights[highlight]}`}
       >
         <div className="w-1/5 flex flex-col justify-center">
           <h1 className="font-heading font-bold text-7xl text-right pb-2">
