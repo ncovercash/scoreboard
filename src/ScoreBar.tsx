@@ -22,7 +22,7 @@ const ScoreBar: FunctionComponent<Props> = (props: Props) => {
           className="text-white font-round font-semibold text-4xl"
           style={{ paddingRight: "0.8rem", paddingBottom: "0.1rem" }}
         >
-          {props.score}
+          {Math.round(props.score * 100) / 100}
         </p>
       </div>
     </div>
