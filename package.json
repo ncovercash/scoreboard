@@ -1,7 +1,7 @@
 {
   "name": "scoreboard",
   "version": "0.1.0",
-  "description": "This repository hosts the files for CloudScreen",
+  "description": "This repository hosts the files for a simple scoreboard",
   "repository": "github:ncovercash/scoreboard",
   "author": "Noah Overcash <me@ncovercash.dev>",
   "license": "AGPL-3.0-or-later",
