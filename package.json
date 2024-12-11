@@ -8,7 +8,7 @@
   "dependencies": {
     "@types/node": "16.18.121",
     "@types/react": "17.0.83",
-    "@types/react-dom": "17.0.25",
+    "@types/react-dom": "17.0.26",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "5.0.1",
